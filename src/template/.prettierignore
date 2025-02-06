@@ -1,0 +1,12 @@
+node_modules
+coverage
+.next
+.idea
+dist
+/dist
+package-lock.json
+public
+next-env.d.ts
+next.config.ts
+yarn.lock
+.vscode

@@ -15,7 +15,6 @@
   ],
   "author": "Hadi (اسم خودت)",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "build": "webpack",
     "start": "node dist/evo.js",
