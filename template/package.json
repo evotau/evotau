@@ -1,0 +1,22 @@
+{
+  "name": "evotau-project",
+  "version": "1.0.0",
+  "description": "پروژه جدید Evotau",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "evotau",
+    "nodejs",
+    "framework"
+  ],
+  "author": "Hadi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
