@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const config = {
   // تغییر module.exports به export default
-  entry: "./cli.ts",
+  entry: "./src/evo.ts",
   mode: "production",
   target: "node",
   devtool: "source-map",
@@ -29,7 +29,7 @@ const config = {
   },
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [{ from: "template", to: "template" }],
+      patterns: [{ from: "src/template", to: "template" }],
     }),
   ],
 };

@@ -2,9 +2,9 @@
   "name": "evotau",
   "version": "1.0.1",
   "description": "The heart of the Evotau framework",
-  "main": "dist/cli.js",
+  "main": "dist/evo.js",
   "bin": {
-    "create-evotau": "./dist/cli.js"
+    "create-evotau": "./dist/evo.js"
   },
   "keywords": [
     "evotau",
@@ -18,7 +18,7 @@
   "type": "module",
   "scripts": {
     "build": "webpack",
-    "start": "node dist/cli.js",
+    "start": "node dist/evo.js",
     "dev": "webpack --watch"
   },
   "files": [
