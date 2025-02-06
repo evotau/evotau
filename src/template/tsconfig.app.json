@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json", /* Inherit options from the base config. */
+  "compilerOptions": {
+    "target": "es2021",        /* Target environment for your application (e.g., browser or Node.js). */
+    "module": "esnext",        /* Module format for your application. */
+    "outDir": "dist/app"      /* Output directory for application-specific files. */
+  },
+  "include": [
+    "src/**/*.app.ts"        /* Include application-specific TypeScript files. */
+  ],
+  "exclude": []
+}

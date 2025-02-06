@@ -1,0 +1,16 @@
+node_modules
+*.sublime-workspace
+*.log
+build
+dist
+yarn.lock
+package-lock.json
+test/__app
+coverage
+.DS_STORE
+.nyc_output
+.idea
+.vscode/
+*.sublime-project
+.env
+backup

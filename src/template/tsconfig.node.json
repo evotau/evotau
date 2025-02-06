@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json", /* Inherit options from the base config. */
+  "compilerOptions": {
+    "target": "es2021",        /* Target Node.js environment (or a specific Node.js version). */
+    "module": "commonjs",      /* Use CommonJS modules for Node.js. */
+    "outDir": "dist"           /* Output directory for compiled JavaScript files. */
+  },
+  "include": [
+    "src/**/*.ts"             /* Include all TypeScript files in src folder. */
+  ],
+  "exclude": [
+    "src/**/*.app.ts"         /* Exclude files specifically for app (if any). */
+  ]
+}
+
+ 

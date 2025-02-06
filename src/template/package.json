@@ -1,0 +1,52 @@
+{
+  "name": "evotau-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evotau: Efficient and scalable web framework. Rapid development of modern applications.",
+  "main": "index.js",
+   "scripts": {
+    "start": "node bootstrap/app.js",
+    "build": "node evo build",
+    "dev": "node evo serve --hmr",
+    "test": "node evo test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "keywords": [
+    "evotau",
+    "web",
+    "api",
+    "nodejs",
+    "framework"
+  ],
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/evotau/evotau"
+  },
+  "bugs": {
+    "url": "https://github.com/evotau/evotau/issues"},
+  "author": {
+    "name": "Hadi Mousavi",
+    "email": "codeindevelopment@gmail.com",
+    "url": "https://aqupila.com",
+    "github": "https://github.com/codeindevelop",
+    "address": "Tabriz, Iran",
+    "company": "Aqupila",
+    "companyUrl": "https://aqupila.com",
+    "companyEmail": "hi@aqupila.com",
+    "companyDescription": "Aqupila is a software development company that provides web and mobile development services.",
+    "companyFounded": "2020",
+    "companyIndustry": "Software Development",
+    "companyType": "Private"
+  }, 
+  "license": "MIT"
+  
+}

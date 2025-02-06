@@ -1,37 +1,44 @@
-import path from "path"; // تغییر require به import
-import CopyWebpackPlugin from "copy-webpack-plugin"; // تغییر require به import
-import { fileURLToPath } from "url"; // برای استفاده از __dirname در ES Modules
+import webpack from 'webpack'; // ایمپورت Webpack
+import path from 'path';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const config = {
-  // تغییر module.exports به export default
-  entry: "./cli.ts",
-  mode: "production",
-  target: "node",
-  devtool: "source-map",
+  entry: './src/evo.ts',
+  mode: 'production',
+  target: 'node',
+  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.ts?$/,
-        use: "ts-loader",
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: ['.ts', '.js'],
   },
   output: {
-    filename: "cli.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'evo.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [{ from: "template", to: "template" }],
-    }),
-  ],
+      patterns: [
+        { from: 'src/template', to: 'template' },
+        ],
+      }),
+      new webpack.BannerPlugin({ // اضافه کردن BannerPlugin
+        banner: '#!/usr/bin/env node',
+        raw: true,
+        entryOnly: true,
+      }),
+    ],
 };
 
-export default config; // تغییر module.exports به export default
+export default config;
